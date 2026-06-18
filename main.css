@@ -1,5 +1,25 @@
-h1{
-    font-size: 4rem;
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img{
+    width:100%
+}
+body{
+    background-color: rgb(24, 0, 68);
+    margin: 0;
+}
+.title-image{
+    background-image: url("./image/abstract-dark-blue-background-with-triangles-and-glowing-lines-vector.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 250px;
+}
+.title{ color: whitesmoke;
     text-align: center;
-    margin: auto;
+    position: absolute;
+    top:50px;
+    width: 100%;
+    font-size: 4rem;
 }
