@@ -16,10 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .content {
@@ -36,7 +33,18 @@ h2 span {
     color: red;
 }
 
+.intro{
+    font-size: 25px;
+}
 .grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.grid2 {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
@@ -47,10 +55,16 @@ h2 span {
     padding: 20px;
     border-radius: 10px;
     transition: 0.2s;
+     border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.347);
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    background-color: #676767;
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.664);
 }
 
 .card img {
@@ -59,16 +73,13 @@ h2 span {
     display: block;
 }
 
-.card a {
-    display: block;
-    margin-top: 15px;
-    padding: 10px;
-    background: darkred;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.card .card-text {
+    margin-top: 8px;
+    font-size: 30px;
+    opacity: 0.8;
+    color: aliceblue;
 }
 
-.card a:hover {
-    background: rgb(207, 2, 2);
+a{
+        text-decoration: none;
 }
