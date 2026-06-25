@@ -19,6 +19,13 @@ body {
     font-size: 1.5rem;
 }
 
+span{
+    background-image: linear-gradient(to right, #ff4242, #ff7474, #ff4242);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .logo {
     width: 40px;
 }
@@ -31,10 +38,6 @@ body {
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-h2 span {
-    color: rgb(202, 0, 0);
 }
 
 .intro{
@@ -83,7 +86,7 @@ h2 span {
     transform: scale(1.03);
     background:rgba(255, 255, 255, 0.486);
     transform: translateY(-5px);
-    box-shadow: 0 0 35px rgba(255, 0, 0, 0.664);
+    box-shadow: 0 0 35px rgba(255, 55, 0, 0.664);
 }
 
 .card img {
@@ -93,7 +96,7 @@ h2 span {
 }
 
 .card .card-text {
-    margin-top: 8px;
+    margin-top: 4px;
     font-size: 30px;
     opacity: 0.8;
     color: aliceblue;

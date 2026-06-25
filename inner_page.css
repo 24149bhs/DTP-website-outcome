@@ -19,7 +19,10 @@ header{
 }
 
 .title span{
-    color: rgb(202, 0, 0);
+    background-image: linear-gradient(to right, #ff4242, #ff7474, #ff4242);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .back-btn{
@@ -105,8 +108,32 @@ header{
 }
 
 .rank-number{
-    font-size:32px;
+    font-size:29px;
     font-weight:bold;
+}
+
+.one{
+    font-size:32px;
+    background-image: linear-gradient(to right, #ffe100, #fff189, #ffe100);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.two{
+    font-size:32px;
+    background-image: linear-gradient(to right, #686868, #b5b5b5, #686868);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.three{
+    font-size:32px;
+    background-image: linear-gradient(to right, #704700, #c57d00, #704700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .rank-card img{
