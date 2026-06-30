@@ -14,9 +14,10 @@ body {
 .hero {
     height: 180px;
     display: flex;
+    margin-top: auto;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 span{
@@ -27,7 +28,7 @@ span{
 }
 
 .logo {
-    width: 40px;
+    width: 53px;
 }
 
 .content {
