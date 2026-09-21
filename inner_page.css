@@ -137,7 +137,8 @@ header{
 }
 
 .rank-card img{
-    width:180px;
+    width:210px;
+    margin:10px 0;
 }
 
 .skin-info h3{
