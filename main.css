@@ -106,3 +106,7 @@ a{
     margin-bottom: 3px;
     margin-left: 50px;
 }
+
+.source a{
+    color: white;
+}
