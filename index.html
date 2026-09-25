@@ -1,62 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Sets the character encoding -->
     <meta charset="UTF-8">
+    <!-- Makes the website responsive on different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title shown on the browser tab -->
     <title>Valorant Skins</title>
+    <!-- Links the HTML file to the CSS stylesheet -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <!-- Main header containing the website title and Valorant logo -->
+    <header class="hero">
+        <h1>
+            Best Gun Skins in
+            <span>Valorant</span>
+            <!-- Valorant logo -->
+            <img src="./images/val.png" alt="logo" class="logo">
+        </h1>
+    </header>
+    <!-- Main content section containing the weapon categories -->
+    <section class="content">
+        <!-- Heading for the weapon categories -->
+        <h2>Type of <span>Guns</span></h2>
+        <!-- Instructions for the user -->
+        <p class="intro">Click the Cards to Check the Ranks</p>
+        <!-- First row of weapon cards -->
+        <div class="grid">
+            <!-- Vandal card links to the Vandal page -->
+            <a href="vandal.html">
+                <div class="card">
+                    <!-- Image of the Vandal -->
+                    <img src="./images/Vandal.png" alt="Vandal">
+                    <!-- Name of the weapon -->
+                    <p class="card-text">
+                        Vandal
+                    </p>
+                </div>
+            </a>
+            <!-- Phantom card links to the Phantom page -->
+            <a href="phantom.html">
+                <div class="card">
+                    <!-- Image of the Phantom -->
+                    <img src="./images/Phantom.webp" alt="Phantom">
+                    <!-- Name of the weapon -->
+                    <p class="card-text">
+                        Phantom
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- Second row of weapon cards -->
+        <div class="grid2">
+            <!-- Guardian card links to the Guardian page -->
+            <a href="guardian.html">
+                <div class="card">
+                    <!-- Image of the Guardian -->
+                    <img src="./images/Guardian.webp" alt="Guardian">
+                    <!-- Name of the weapon -->
+                    <p class="card-text">
+                        Guardian
+                    </p>
+                </div>
+            </a>
+            <!-- Operator card links to the Operator page -->
+            <a href="operator.html">
+                <div class="card">
+                    <!-- Image of the Operator -->
+                    <img src="./images/Operator.webp" alt="Operator">
+                    <!-- Name of the weapon -->
+                    <p class="card-text">
+                        Operator
+                    </p>
+                </div>
+            </a>
 
-<header class="hero">
-    <h1>Best Gun Skins in <span>Valorant</span> <img src="./images/val.png" alt="logo" class="logo"></h1>
-</header>
-
-<section class="content">
-    <h2>Type of <span>Guns</span></h2>
-    <p class="intro">Click the Cards to Check the Ranks</p>
-    <div class="grid">
-        <a href="vandal.html">
-            <div class="card">
-                <img src="./images/Vandal.png" alt="Vandal">
-                <p class="card-text">
-                    Vandal
-                </p>
-            </div>
-        </a>
-
-        <a href="phantom.html">
-            <div class="card">
-                <img src="./images/Phantom.webp" alt="Phantom">
-                <p class="card-text">
-                    Phantom
-                </p>
-            </div>
-        </a>
+        </div>
+    </section>
+    <!-- Source section for the images used on the website -->
+    <div class="source">
+        <p>
+            The images source:
+            <a href="https://valorant.fandom.com/wiki/VALORANT_Wiki">
+                https://valorant.fandom.com/wiki/VALORANT_Wiki
+            </a>
+        </p>
     </div>
-
-    <div class="grid2">
-        <a href="guardian.html">
-            <div class="card">
-                <img src="./images/Guardian.webp" alt="Guardian">
-                <p class="card-text">
-                    Guardian
-                </p>
-            </div>
-        </a>
-
-        <a href="operator.html">
-            <div class="card">
-                <img src="./images/Operator.webp" alt="Operator">
-                <p class="card-text">
-                    Operator
-                </p>
-            </div> 
-        </a>
-    </div>
-</section>
-<div class="source">
-<p>The images source: <a href= https://valorant.fandom.com/wiki/VALORANT_Wiki >https://valorant.fandom.com/wiki/VALORANT_Wiki</a></p>
-</div>
 </body>
 </html>

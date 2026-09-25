@@ -1,166 +1,167 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    /* Removes default spacing and makes sizing easier to control */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-body{
-    min-height:100vh;
+body {
+    /* Sets the minimum page height and background */
+    min-height: 100vh;
     background: linear-gradient(135deg, #011250, #124d9b, #8b1a23);
-    color:white;
-    font-family:Arial,sans-serif;
-    padding:40px;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 40px;
 }
-
-header{
-    max-width:1200px;
-    margin:auto;
-    margin-bottom:40px;
+header {
+    /* Controls the width and spacing of the header */
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
 }
-
-.title span{
+.title span {
+    /* Creates a gradient effect on the highlighted title text */
     background-image: linear-gradient(to right, #ff4242, #ff7474, #ff4242);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-
-.back-btn{
-    text-decoration:none;
-    color:rgb(125, 125, 125);
-    font-size:24px;
-    transition:.2s;
+.back-btn {
+    /* Styles the button used to return to the home page */
+    text-decoration: none;
+    color: rgb(125, 125, 125);
+    font-size: 24px;
+    transition: .2s;
 }
-
-.back-btn:hover{
+.back-btn:hover {
+    /* Changes the back button colour when hovered */
     color: white;
 }
-
-.title{
-    margin-top:20px;
+.title {
+    /* Adds space above the page title */
+    margin-top: 20px;
 }
-
-.title h1{
-    font-size:42px;
+.title h1 {
+    /* Sets the size of the main page title */
+    font-size: 42px;
 }
-
-.title p{
-    color:#a9b2c3;
+.title p {
+    /* Styles the subtitle under the main title */
+    color: #a9b2c3;
 }
-
-.ranking-container{
-    max-width:1200px;
-    margin:auto;
+.ranking-container {
+    /* Controls the maximum width of the ranking section */
+    max-width: 1200px;
+    margin: auto;
 }
-
-.table-header{
-    display:grid;
-    grid-template-columns:120px 1fr 120px;
-    padding:18px 25px;
-    background:rgba(255,255,255,.08);
-    border-radius:15px;
-    margin-bottom:15px;
-    font-weight:bold;
+.table-header {
+    /* Creates the layout for the ranking table header */
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    padding: 18px 25px;
+    background: rgba(255, 255, 255, .08);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
-
-.rank-card{
-    background:rgba(255,255,255,.05);
-    backdrop-filter:blur(10px);
-    border-radius:18px;
-    margin-bottom:15px;
-    overflow:hidden;
+.rank-card {
+    /* Styles each individual ranking card */
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    margin-bottom: 15px;
+    overflow: hidden;
 }
-
-.rank-card summary{
-    display:grid;
-    grid-template-columns:100px 220px 1fr;
-    align-items:center;
-    padding:20px;
-    cursor:pointer;
-    list-style:none;
+.rank-card summary {
+    /* Creates the layout for each ranking card */
+    display: grid;
+    grid-template-columns: 100px 220px 1fr;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    list-style: none;
 }
-
-.rank-card summary:hover{
-    background:rgba(255,255,255,.15);
+.rank-card summary:hover {
+    /* Highlights the card when the user moves the mouse over it */
+    background: rgba(255, 255, 255, .15);
 }
-
-.skin-detail{
-    padding:20px 30px;
-    border-top:1px solid rgba(255, 255, 255, 0.251);
-    line-height:1.8;
-    color:#d8d8d8;
+.skin-detail {
+    /* Styles the extra information shown when a card is opened */
+    padding: 20px 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.251);
+    line-height: 1.8;
+    color: #d8d8d8;
 }
-
-.rank-card summary::after{
-    content:"+";
-    font-size:30px;
-    margin-left:auto;
-    transition:.3s;
+.rank-card summary::after {
+    /* Creates the plus symbol used to open the card */
+    content: "+";
+    font-size: 30px;
+    margin-left: auto;
+    transition: .3s;
 }
-
-.rank-card[open] summary::after{
-    transform:rotate(45deg);
+.rank-card[open] summary::after {
+    /* Rotates the plus symbol when the card is open */
+    transform: rotate(45deg);
 }
-
-.rank-card:hover{
-    transform:translateY(-4px);
-    border:1px solid #ff4655;
+.rank-card:hover {
+    /* Adds a hover effect around the ranking card */
+    transform: translateY(-4px);
+    border: 1px solid #ff4655;
 }
-
-.rank-number{
-    font-size:29px;
-    font-weight:bold;
+.rank-number {
+    /* Styles the ranking numbers */
+    font-size: 29px;
+    font-weight: bold;
 }
-
-.one{
-    font-size:32px;
+.one {
+    /* Gold gradient for first place */
+    font-size: 32px;
     background-image: linear-gradient(to right, #ffe100, #fff189, #ffe100);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-
-.two{
-    font-size:32px;
+.two {
+    /* Silver gradient for second place */
+    font-size: 32px;
     background-image: linear-gradient(to right, #686868, #b5b5b5, #686868);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-
-.three{
-    font-size:32px;
+.three {
+    /* Bronze gradient for third place */
+    font-size: 32px;
     background-image: linear-gradient(to right, #704700, #c57d00, #704700);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-
-.rank-card img{
-    width:210px;
-    margin:10px 0;
+.rank-card img {
+    /* Controls the size of the weapon images */
+    width: 210px;
+    margin: 10px 0;
 }
-
-.skin-info h3{
-    font-size:24px;
-    margin-bottom:5px;
+.skin-info h3 {
+    /* Styles the name of each skin */
+    font-size: 24px;
+    margin-bottom: 5px;
     margin-left: 10px;
 }
-
-.skin-info p{
-    color:#9da6b8;
+.skin-info p {
+    /* Styles text inside the skin information */
+    color: #9da6b8;
 }
-
-h4{
+h4 {
+    /* Sets the size of the About heading */
     font-size: 18.5px;
 }
-
-.source{
+.source {
+    /* Styles and positions the image source text */
     font-size: 12px;
     margin-bottom: -10px;
     margin-left: 200px;
 }
-
-.source a{
+.source a {
+    /* Makes the source link white */
     color: white;
 }

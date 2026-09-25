@@ -1,17 +1,18 @@
 * {
+    /* Removes default spacing and makes sizing easier to control */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 body {
+    /* Sets the text colour and page background */
     color: white;
     background: linear-gradient(135deg, #011250, #124d9b, #8b1a23);
     min-height: 100vh;
 }
-
 .hero {
+    /* Creates and centers the main hero section */
     height: 180px;
     display: flex;
     margin-top: auto;
@@ -19,52 +20,51 @@ body {
     align-items: center;
     font-size: 2rem;
 }
-
-span{
+span {
+    /* Creates a gradient effect on highlighted text */
     background-image: linear-gradient(to right, #ff4242, #ff7474, #ff4242);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-
 .logo {
+    /* Controls the size of the Valorant logo */
     width: 53px;
 }
-
 .content {
+    /* Controls the spacing and alignment of the main content */
     margin-top: -30px;
     text-align: center;
     padding: 30px;
 }
-
 h2 {
+    /* Styles the main section heading */
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-
-.intro{
+.intro {
+    /* Styles the instructions under the heading */
     font-size: 25px;
 }
-
 .grid,
 .grid2 {
+    /* Creates a responsive grid for the weapon cards */
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
-
 .card {
-    background:rgba(255, 255, 255, 0.192);
-    backdrop-filter:blur(10px);
+    /* Styles the weapon cards */
+    background: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
     padding: 20px;
     transition: 0.2s;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 255, 0.347);
-    
 }
-
 .card::before {
+    /* Creates a border effect inside each card */
     content: "";
     position: absolute;
     inset: 15px;
@@ -73,40 +73,40 @@ h2 {
     pointer-events: none;
     transition: 0.3s;
 }
-
 .card:hover::before {
-    border-color: rgba(255,255,255,0.6);
+    /* Makes the inner border brighter when hovered */
+    border-color: rgba(255, 255, 255, 0.6);
 }
-
 .card:hover {
+    /* Adds movement, brightness and a stronger shadow when hovered */
     transform: translateY(-1.5px) scale(1.03);
     background: rgba(255, 255, 255, 0.486);
     box-shadow: 0 0 35px rgba(255, 55, 0, 0.664);
 }
-
 .card img {
-    width: 80% ;
-    margin: auto ;
-    display: block ;
+    /* Controls the size and position of weapon images */
+    width: 80%;
+    margin: auto;
+    display: block;
 }
-
 .card .card-text {
+    /* Styles the weapon name displayed below the image */
     margin-top: 4px;
     font-size: 30px;
     opacity: 0.8;
     color: aliceblue;
 }
-
-a{
-        text-decoration: none;
+a {
+    /* Removes the default underline from links */
+    text-decoration: none;
 }
-
-.source{
+.source {
+    /* Styles and positions the image source text */
     font-size: 12px;
     margin-bottom: 3px;
     margin-left: 50px;
 }
-
-.source a{
+.source a {
+    /* Makes the source link white */
     color: white;
 }
